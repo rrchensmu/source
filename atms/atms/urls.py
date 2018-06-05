@@ -18,5 +18,9 @@ from django.contrib import admin
 from edu import views as edu_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    
+    url(r'^edu/news.html', edu_views.edu_news),
+    
+    
     url(r'^edu/', edu_views.edu_index),
 ]
