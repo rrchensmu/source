@@ -16,7 +16,9 @@ header {
 	background: #788;
 	border-bottom: 1px solid #ffe;
 }
-
+header img{
+	width: 100%
+}
 #nav {
 	background: #788;
 }
@@ -71,6 +73,9 @@ nav a {
 	text-overflow: ellipsis;
 }
 
+.master img{
+	width: 100%;
+}
 .tdate {
 	float: right;
 	display: inline-block;
@@ -81,6 +86,40 @@ nav a {
 	list-style: none;
 	margin-left: 0rem;
 }
+
+.school-images {
+	
+}
+
+.images-list>li {
+	overflow: auto;
+	margin-top: 2rem;
+}
+
+.images-list>li>ul>li {
+	float: left;
+	width: 23%;
+	margin-left: 1%;
+}
+
+.images-list>li>ul>li>img {
+	width: 100%;
+}
+
+.active {
+	display: block;
+}
+
+.nodisplay {
+	display: none;
+}
+
+footer{background:#788; line-height: 3rem;}
+footer p{
+	text-align: center;
+	line-height: 3rem;
+}
+footer a{ color:#555;}
 </style>
 </head>
 <body>
@@ -103,7 +142,6 @@ nav a {
 		</nav>
 	</div>
 	<div id="content" class="container">
-
 		<div class="row">
 			<div class="col-md-4" id="">
 				<div class="title">
@@ -124,7 +162,7 @@ nav a {
 						class="tdate">05-08</span></li>
 				</ul>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 news">
 				<div class="title">
 					<h3 class="classify">学校新闻</h3>
 					<h3 class="t-more">
@@ -144,23 +182,78 @@ nav a {
 						class="tdate">05-08</span></li>
 				</ul>
 			</div>
+			<div class="col-md-2 master">
+				<div class="title">
+					<h3 class="classify">校长简介</h3>
+				</div>
+				<div >
+					<img alt="" src="/static/images/edu/master.png">
+					<p>中国好校长</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 school-images">
+				<div class="title">
+					<h3 class="classify">学子荣誉</h3>
+					<h3 class="classify">校园生活</h3>
+					<h3 class="classify">校友之窗</h3>
+					<h3 class="t-more">
+						<a href="">更多</a>
+					</h3>
+				</div>
+				<ul class="images-list">
+					<li class="active"><ul>
+							<li><img alt="" src="/static/images/edu/test1.png">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test2.jpg">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test3.jpg">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test4.png">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+						</ul></li>
+					<li class="nodisplay"><ul>
+							<li><img alt="" src="/static/images/edu/test1.png">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test2.jpg">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test3.jpg">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test4.png">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+						</ul></li>
+					<li class="nodisplay"><ul>
+							<li><img alt="" src="/static/images/edu/test1.png">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test2.jpg">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test3.jpg">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+							<li><img alt="" src="/static/images/edu/test4.png">
+								<p>斯坦福大学MBA苏锐校友返校分享成长之思</p></li>
+						</ul></li>
+
+				</ul>
+			</div>
 			<div class="col-md-2">
 				<div class="title">
-					<h3 class="classify">校长简介</h3>
+					<h3 class="classify">服务支持中心</h3>
 				</div>
 				<ul class="t-list nolist">
-					<li><img alt="" src="/static/images/edu/master.png"></li>
-					<li><p></p></li>
-				</ul>
-				<div class="title">
-					<h3 class="classify">校长简介</h3>
-				</div>
-				<ul class="t-list nolist">
-					<li><img alt="" src="/static/images/edu/master.png"></li>
-					<li><p></p></li>
+					<li><a href="">竞赛指导中心</a></li>
+					<li><a href="">艺术体育中心</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<footer>
+		<div class="container">
+			<p>
+				<span>友情链接：</span> <a href="">教育部</a> <a href="">广东省教育厅</a> <a href="">茂名市教育局</a> <a
+					href="">信宜市教育局</a>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>
