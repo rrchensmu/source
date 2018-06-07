@@ -6,32 +6,11 @@
 <title>怀新小学官网</title>
 <link rel="stylesheet" type="text/css"
 	href="/static/bootcss/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="/static/css/edu.css" />
+	
 <style type="text/css">
-/* 公用部分 */
-* {
-	margin: 0;
-	padding: 0
-}
 
-#nav, header, .conter {
-	width: 90%;
-	margin: auto;
-}
-
-header {
-	background: #788;
-	border-bottom: 1px solid #ffe;
-}
-/*    导航栏 */
-#nav {
-	background: #788;
-		position:relative;
-}
-
-nav a {
-	font-size: 2rem;
-	color: #000;
-}
 
 .title {
 	border-bottom: 2px solid #dd5;
@@ -181,35 +160,11 @@ nav a {
     
     background-color:#D9E8DF;
 }
-/* 页脚 */
-.folot{
-clear：both
-}
-   .footer{
-   	display: inline-block;
-   position:absolute;
-   }
+
 </style>
 </head>
 <body>
-	<header>
-		<img alt="" src="/static/images/edu/logo.png">
-	</header>
-	<div id="nav">
-		<nav class="container">
-			<ul class="nav nav-justified">
-				<li><a href="">首页</a></li>
-				<li><a href="">学校概况</a></li>
-				<li><a href="">学校资讯</a></li>
-				<li><a href="">教师教学</a></li>
-				<li><a href="">学生风采</a></li>
-				<li><a href="">招生招聘</a></li>
-				<li><a href="">校史馆</a></li>
-				<li><a href="">校友之家</a></li>
-
-			</ul>
-		</nav>
-	</div>
+	{% include 'edu/nav.html' %}
 	<!-- 	 内容 -->
 	<div class="conter">
 		<div class="conter-left">
@@ -278,6 +233,6 @@ clear：both
 			</ul>
 		</div>
 	</div>
-	
+	{% include 'edu/footer.html' %}
 </body>
 </html>

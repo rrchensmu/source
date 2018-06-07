@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+header {
+	background: #788;
+	border-bottom: 1px solid #ffe;
+}
+
+header img {
+	width: 100%
+}
+
+#nav {
+	background: #788;
+}
+
+nav a {
+	font-size: 2rem;
+	color: #000;
+}
+
+footer {
+	background: #788;
+	line-height: 3rem;
+}
+
+footer p {
+	text-align: center;
+	line-height: 3rem;
+}
+
+footer a {
+	color: #555;
+}
