@@ -10,5 +10,5 @@ def edu_news(request):
 def edu_school(request):
     return render(request,'edu/school.html')
 
-def edu_master(request):
+def edu_marster(request):
     return render(request,'edu/master.html')
