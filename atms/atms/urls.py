@@ -20,6 +20,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
     url(r'^edu/news.html', edu_views.edu_news),
+    url(r'^edu/school.html', edu_views.edu_school),
+    url(r'^edu/master.html', edu_views.edu_master),
     
     
     url(r'^edu/', edu_views.edu_index),
