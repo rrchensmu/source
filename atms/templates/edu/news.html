@@ -1,10 +1,283 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>怀新小学官网</title>
+<link rel="stylesheet" type="text/css"
+	href="/static/bootcss/css/bootstrap.css" />
+<style type="text/css">
+/* 公用部分 */
+* {
+	margin: 0;
+	padding: 0
+}
+
+#nav, header, .conter {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	background: #788;
+	border-bottom: 1px solid #ffe;
+}
+/*    导航栏 */
+#nav {
+	background: #788;
+		position:relative;
+}
+
+nav a {
+	font-size: 2rem;
+	color: #000;
+}
+
+.title {
+	border-bottom: 2px solid #dd5;
+}
+
+.title h3 {
+	display: inline-block;
+	padding-bottom: 1rem;
+}
+
+.title .classify {
+	border-bottom: 2px solid #36A;
+	margin-bottom: -2px;
+}
+
+.title .t-more {
+	float: right;
+	display: inline-block;
+}
+
+.title .t-more a {
+	color: #555;
+	font-size: 1.8rem;
+}
+
+.t-list {
+	margin-top: 1rem;
+}
+
+.t-list li {
+	height: 2.5rem;
+	line-height: 2rem;
+	list-style: none;
+}
+
+.t-list a {
+	font-size: 1.6rem;
+	color: #555;
+	display: inline-block;
+	max-width: 85%;
+	overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.tdate {
+	float: right;
+	display: inline-block;
+	font-size: 1.6rem;
+}
+
+.nolist li {
+	list-style: none;
+	margin-left: 0rem;
+	
+}
+/* 内容(左边) */
+.conter {
+	margin: 10px auto;
+	border:1px solid red;
+	overflow:auto;	
+}
+.conter-left-two>li>a{
+ text-decoration: none;
+}
+.conter-left {
+	width: 30%;
+	float: left;
+}
+
+.conter-left-one {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background: #788;
+}
+
+.conter-left-one>span {
+	font-size: 20px;
+}
+
+.conter-left-two {
+	background: #F2F2F2;
+}
+
+.conter-left-two>li {
+    list-style: none;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid;
+	cursor:pointer;
+	padding-left:20px;
+}
+
+.conter-left-two>li:hover {
+    
+    background-color:#D9E8DF;
+	border-bottom: 1px solid;
+}
+
+.conter-left-two>li>a>span {
+	float: right;
+	margin-right:20px;
+}
+/* 内容(右边) */
+.conter-right {
+	width: 69%;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	
+}
+
+.conter-right-one {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+.conter-right-two>li>span {
+	float: right;
+	margin-right: 30px;
+}
+
+.conter-right-two>li>a {
+	font-size: 17px;
+	text-decoration: none;
+	margin-left: 30px;
+}
+
+.conter-right-two>li>div {
+	width: 10px;
+	height: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.conter-right-two>li {
+	border-bottom: 1px solid;
+	list-style: none;
+	cursor:pointer;
+}
+.conter-right-two>li:hover {
+    
+    background-color:#D9E8DF;
+}
+/* 页脚 */
+.folot{
+clear：both
+}
+   .footer{
+   	display: inline-block;
+   position:absolute;
+   }
+</style>
 </head>
 <body>
-     <div></div>
+	<header>
+		<img alt="" src="/static/images/edu/logo.png">
+	</header>
+	<div id="nav">
+		<nav class="container">
+			<ul class="nav nav-justified">
+				<li><a href="">首页</a></li>
+				<li><a href="">学校概况</a></li>
+				<li><a href="">学校资讯</a></li>
+				<li><a href="">教师教学</a></li>
+				<li><a href="">学生风采</a></li>
+				<li><a href="">招生招聘</a></li>
+				<li><a href="">校史馆</a></li>
+				<li><a href="">校友之家</a></li>
+
+			</ul>
+		</nav>
+	</div>
+	<!-- 	 内容 -->
+	<div class="conter">
+		<div class="conter-left">
+			<div class="conter-left-one">
+				<span>学校质询</span>
+			</div>
+			<ul class="conter-left-two">
+				<li><a href="www.baidu.com">小学新闻<span>></span></a></li>
+				<li><a href="www.baidu.com">通知公告 <span>></span></a></li>
+				<li><a href="www.baidu.com">招标公告 <span>></span></a></li>
+				<li><a href="www.baidu.com">媒体报道 <span>></span></a></li>
+			</ul>
+		</div>
+		<div class="conter-right">
+			<div class="conter-right-one">
+				><span>学校质询</span>><span>新闻中心</span>
+			</div>
+			<ul class="conter-right-two">
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+				<li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li><li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li><li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li><li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li><li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li><li>
+					<div></div>
+					<a>2018学录取报告</a> <span>2018-05-23</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
 </body>
 </html>
