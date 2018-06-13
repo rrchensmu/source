@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>校长简介·怀新小学官网</title>
+<link rel="stylesheet" type="text/css"
+	href="/static/bootcss/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="/static/css/edu.css" />
+<style type="text/css">
+
+#content {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+</style>
+</head>
+<body>
+	{% include 'edu/nav.html' %}
+	<div id="content" class="container">
+		<div class="row">
+			<div class="col-md-2">
+				{% include 'edu/leftnav.html' %}
+			</div>
+			<div class="col-md-10">
+				<img alt="" src="/static/images/edu/master.png" width="60%" style="margin:0 auto;display:block;">
+				<p>怀乡小学原名怀新小学，前身是清咸丰三年（1853年）创建的怀新书院。</p>
+				<p>怀乡起义指挥部旧址在广东信宜市怀乡镇怀乡小学校园内。怀乡起义指挥部旧址坐落该校西北，是一座3间的两层楼房，土木砖瓦结构，面积100平方米。</p>
+				<p>1927年上海“四·一二”、广州“四·一五”反革命政变后，反动派疯狂镇压革命。根据“八一”南昌起义和中共中央“八七”会议精神，遵照中共广东省委的指示，中共信宜县委以该处为指挥部，于1927年12月15日举行了震动粤西的信宜怀乡起义。</p>
+				<p>当天晚上，起义队伍攻占设在怀乡的信宜县七区民团局和怀乡区署，俘获怀乡区长周植盛，成立信宜县怀乡区苏维埃政府，宣布革命政纲，执行了一系列革命措施。但由于敌我力量悬殊太大，起义队伍转战四天四夜，终于分散隐伏待命。1983年，怀乡起义指挥部旧址定为信宜县（市）文物保护单位。</p>
+			</div>
+		</div>
+
+
+	</div>
+	<footer>
+		<div class="container">
+			<p>
+				<span>友情链接：</span> <a href="">教育部</a> <a href="">广东省教育厅</a> <a
+					href="">茂名市教育局</a> <a href="">信宜市教育局</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
