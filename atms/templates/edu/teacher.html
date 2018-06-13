@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>名师风采·怀新小学官网</title>
+<link rel="stylesheet" type="text/css"
+	href="/static/bootcss/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/edu.css" />
+<style type="text/css">
+#content {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+	{% include 'edu/nav.html' %}
+	<div id="content" class="container">
+		<div class="row">
+			<div class="col-md-2">{% include 'edu/leftnav.html' %}</div>
+			<div class="col-md-10">
+				<h2>名师堂</h2>
+				<table class="table">
+					<tr>
+						<td>校长</td>
+						<td>张小鹏</td>
+					</tr>
+					<tr>
+						<td>班主任</td>
+						<td><p>
+								六年级：张小鹏<br>五年级：林福珍<br>四年级：林福珍<br>三年级：林福珍<br>二年级：林福珍<br>一年级：林福珍
+								<br>学前班：林福珍
+							</p></td>
+					</tr>
+					<tr>
+						<td>高级教师</td>
+						<td>
+							<p>
+								数学：张小鹏<br>英语：林福珍<br>体育：林福珍<br>艺术：林福珍<br>科学：林福珍
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	{% include 'edu/footer.html' %}
+</body>
+</html>
