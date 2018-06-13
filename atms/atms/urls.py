@@ -23,6 +23,6 @@ urlpatterns = [
     
     url(r'^edu/master.html', edu_views.edu_master),   
     url(r'^edu/school.html', edu_views.edu_school),
-    
+    url(r'^edu/NewFile.html', edu_views.edu_newfile),
     url(r'^edu/', edu_views.edu_index),
 ]
