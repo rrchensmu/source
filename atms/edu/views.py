@@ -12,3 +12,7 @@ def edu_school(request):
 
 def edu_master(request):
     return render(request,'edu/master.html')
+
+
+def edu_newfile(request):
+    return render(request,'edu/NewFile.html')
