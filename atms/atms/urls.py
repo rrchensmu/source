@@ -21,13 +21,8 @@ urlpatterns = [
     
     url(r'^edu/news.html', edu_views.edu_news),
     
-    url(r'^edu/master.html', edu_views.edu_master), 
-      
+    url(r'^edu/master.html', edu_views.edu_master),   
     url(r'^edu/school.html', edu_views.edu_school),
-    
-    url(r'^edu/teacher.html', edu_views.edu_teacher),
-    
-    url(r'^edu/honour.html', edu_views.edu_honour),
     
     url(r'^edu/', edu_views.edu_index),
 ]
