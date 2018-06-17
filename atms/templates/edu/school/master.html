@@ -8,24 +8,22 @@
 	href="/static/bootcss/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
 	href="/static/css/edu.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/lnav.css" />
 <style type="text/css">
-
 #content {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	overflow: auto;
+	overflow: hidden;
 }
-
-
 </style>
 </head>
 <body>
 	{% include 'edu/nav.html' %}
 	<div id="content" class="container">
 		<div class="row">
-			<div class="col-md-2">
-				{% include 'edu/school/leftnav.html' %}
-			</div>
-			<div class="col-md-10">
+			<div class="col-md-3 left-nav">{% include 'edu/school/leftnav.html' %}</div>
+			<div class="col-md-9">
 				<img alt="" src="/static/images/edu/master.png" width="60%" style="margin:0 auto;display:block;">
 				<p>怀乡小学原名怀新小学，前身是清咸丰三年（1853年）创建的怀新书院。</p>
 				<p>怀乡起义指挥部旧址在广东信宜市怀乡镇怀乡小学校园内。怀乡起义指挥部旧址坐落该校西北，是一座3间的两层楼房，土木砖瓦结构，面积100平方米。</p>

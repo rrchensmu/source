@@ -5,7 +5,7 @@ def edu_index(request):
     return render(request,'edu/index.html')
 
 def edu_news(request):
-    return render(request,'edu/news.html')
+    return render(request,'edu/news/news.html')
 
 def edu_school(request):
     return render(request,'edu/school/school.html')
@@ -27,3 +27,6 @@ def edu_schoolfellow(request):
 
 def edu_education(request):
     return render(request,'edu/education/education.html')
+
+def edu_File1(request):
+    return render(request,'edu/NewFile1.html')

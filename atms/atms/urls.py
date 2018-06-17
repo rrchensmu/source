@@ -21,16 +21,15 @@ urlpatterns = [
     
     url(r'^edu/index.html', edu_views.edu_index),
     
-    url(r'^edu/news.html', edu_views.edu_news),#学校资讯
+    url(r'^edu/news.html', edu_views.edu_news),#学校锟斤拷讯
     
-    url(r'^edu/school.html', edu_views.edu_school),#学校概况
+    url(r'^edu/school.html', edu_views.edu_school),#学校锟脚匡拷
     url(r'^edu/master.html', edu_views.edu_master),       
     url(r'^edu/honour.html', edu_views.edu_honour),
     url(r'^edu/teacher.html', edu_views.edu_teacher),
     url(r'^edu/schoolimg.html', edu_views.edu_schoolimg),
-    url(r'^edu/schoolfellow.html', edu_views.edu_schoolfellow),
-    
+    url(r'^edu/schoolfellow.html', edu_views.edu_schoolfellow),   
     url(r'^edu/education.html', edu_views.edu_education),
-    
+    url(r'^edu/NewFile1.html', edu_views.edu_File1),
     url(r'^edu/', edu_views.edu_index),
 ]
