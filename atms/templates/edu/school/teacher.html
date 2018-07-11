@@ -7,10 +7,13 @@
 <link rel="stylesheet" type="text/css"
 	href="/static/bootcss/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="/static/css/edu.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/lnav.css" />
 <style type="text/css">
 #content {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	overflow: auto;
+	overflow: hidden;
 }
 </style>
 </head>
@@ -18,8 +21,8 @@
 	{% include 'edu/nav.html' %}
 	<div id="content" class="container">
 		<div class="row">
-			<div class="col-md-2">{% include 'edu/school/leftnav.html' %}</div>
-			<div class="col-md-10">
+			<div class="col-md-3 left-nav">{% include 'edu/school/leftnav.html' %}</div>
+			<div class="col-md-9">
 				<h2>名师堂</h2>
 				<table class="table">
 					<tr>

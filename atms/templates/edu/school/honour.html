@@ -7,10 +7,14 @@
 <link rel="stylesheet" type="text/css"
 	href="/static/bootcss/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="/static/css/edu.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/lnav.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/lnav.css" />
 <style type="text/css">
 #content {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	overflow: auto;
+	overflow: hidden;
 }
 </style>
 </head>
@@ -18,8 +22,8 @@
 	{% include 'edu/nav.html' %}
 	<div id="content" class="container">
 		<div class="row">
-			<div class="col-md-2">{% include 'edu/school/leftnav.html' %}</div>
-			<div class="col-md-10">
+			<div class="col-md-3 left-nav">{% include 'edu/school/leftnav.html' %}</div>
+			<div class="col-md-9">
 				<div>
 					<h3>2017年</h3>
 					<p>1.小升初考试：1人获全镇前10名；5人获全镇前20名；25人获全市前100名</p>
